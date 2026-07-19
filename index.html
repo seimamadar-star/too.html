@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Spa Website</title>
+  <style>
+    body {
+  font-family: Arial;
+  margin: 0;
+  background: #f9f9f9;
+}
+
+header {
+  background: pink;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav a {
+  margin: 10px;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+.hero {
+  background: rgb(227, 184, 184);
+  padding: 60px;
+  text-align: center;
+}
+
+section {
+  padding: 40px;
+  text-align: center;
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.card {
+  background: #d7c0c0;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #d279aa;
+}
+.gallery{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 15px;
+    padding: 20px;
+}
+
+.gallery img {
+  width: 200px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+form {
+  background: white;
+  width: 300px;
+  margin: auto;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #ea85c3;
+}
+
+form input, form select {
+  display: block;
+  margin: 10px auto;
+  padding: 10px;
+  width: 90%;
+}
+
+button {
+  padding: 10px 20px;
+  background: pink;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background: hotpink;
+}
+  </style>
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header>
+    <h1>beauty salon & Spa</h1>
+    <nav>
+      <a href="#services">Services</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#team">Team</a>
+      <a href="#booking">Book</a>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <h2>Relax. Refresh. Rejuvenate.</h2>
+  </section>
+
+  <!-- SERVICES -->
+  <section id="services">
+    <h2>Our Services</h2>
+    <div class="cards">
+      <div class="card">Massage</div>
+      <div class="card">Facial</div>
+      <div class="card">hair Treatment</div>
+    </div>
+  </section>
+
+  <!-- GALLERY -->
+  <section id="gallery">
+    <h2>Before & After</h2>
+    <div class="gallery">
+      <img src="c:\Users\hp\Downloads\Body Scrub Treatments_ Step-by-Step Protocols, Timing, and Retail Upse.jpg">
+      <img src="c:\Users\hp\Downloads\Rose Glow Facial 🌸✨.jpg">
+      <img src="c:\Users\hp\Downloads\1900024839833205.jpg">
+    </div>
+  </section>
+
+  <!-- TEAM -->
+  <section id="team">
+    <h2>Our Team</h2>
+    <div class="cards">
+      <div class="card">asmo - Therapist</div>
+      <div class="card">Sara - Specialist</div>
+      <div class="card">salma - Manager</div>
+    </div>
+  </section>
+
+  <!-- BOOKING FORM -->
+  <section id="booking">
+    <h2>Book Appointment</h2>
+    <form>
+      <input type="text" placeholder="Full Name" required>
+      <input type="email" placeholder="Email" required>
+      <input type="date" required>
+      <select>
+        <option>Massage</option>
+        <option>Facial</option>
+      </select>
+      <button type="submit">Book Now</button>
+    </form>
+
+    <p>✔ Fadlan buuxi form-ka</p>
+  </section>
+
+</body>
+</html>
